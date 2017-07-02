@@ -1,0 +1,5 @@
+git-annex-metadata-gui (0.0.0~pre1-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Michael Hanke <mih@debian.org>  Sun, 02 Jul 2017 09:11:21 +0200

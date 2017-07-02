@@ -1,0 +1,16 @@
+diff --git a/setup.py b/setup.py
+index cdb1b13..9a91e2a 100644
+--- a/setup.py
++++ b/setup.py
+@@ -49,5 +49,8 @@ setuptools.setup(
+     },
+     keywords='git-annex metadata',
+     packages=['git_annex_metadata_gui'],
+-    install_requires=['PyQt5', 'git-annex-adapter'],
+-)
+\ No newline at end of file
++    # For some reason distutils doesn't find this on Debian
++    # disable, enforced via package deps anyways
++    #install_requires=['PyQt5', 'git-annex-adapter'],
++    install_requires=['git-annex-adapter'],
++)

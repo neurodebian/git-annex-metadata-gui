@@ -1,0 +1,24 @@
+Source: git-annex-metadata-gui
+Maintainer: NeuroDebian Team <team@neuro.debian.net>
+Uploaders: Michael Hanke <mih@debian.org>,
+Section: python
+Priority: optional
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               python3-all,
+               python3-setuptools,
+Standards-Version: 3.9.8
+Homepage: https://github.com/alpernebbi/git-annex-metadata-gui
+X-Python3-Version: >= 3.2
+
+Package: git-annex-metadata-gui
+Architecture: all
+Section: python
+Depends: python3-git-annex-adapter,
+         python3-pyqt5,
+         ${misc:Depends},
+         ${python3:Depends},
+Provides: ${python3:Provides}
+Description: graphical interface to the metadata functionality of git-annex
+ Flexible graphical user interface to view and manipulate metadata
+ of git-annex repositories.

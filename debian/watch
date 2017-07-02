@@ -1,0 +1,3 @@
+version=3
+opts="filenamemangle=s/.*\/v(\d)\.(\d).*/git_annex_metadata_gui-$1.$2\.tar\.gz/" \
+  http://github.com/alpernebbi/git-annex-metadata-gui/tags .*archive/v(\d[\d.]+).tar.gz
